@@ -1,0 +1,15 @@
+    Internal Working of HashMap:
+
+	HashMap<String,Double> emp = new HashMap<String,Double>();
+	emp.put("Alice", 800.0);
+	
+	When i put any element into a HashMap 
+	
+	Step1- Calculates the HashCode of the Key    // Two objects can have same HashCode
+	Step2- Pass the HashCode to the Hash Function, the Hash Function will return the bucket number
+	Step3- The Node entry will be prepared containing four blocks and it will be placed in the appropriate bucket
+	       four blocks - 1)key 2)value 3)HashCode 4)next
+	
+	if its overflow in that case it makes a linked list and add it.
+	if we have add the duplicate key in that case its override the key and update only value.
+	HashCode is always an integer type

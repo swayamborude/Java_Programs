@@ -1,0 +1,4 @@
+Welcome to Eclipse In Java, we can append a string in an existing file using FileWriter which has an option to open a file in append mode.
+Java FileWriter class is used to write character-oriented data to a file.
+It is a character-oriented class that is used for file handling in Java.
+Unlike FileOutputStream class, we don’t need to convert the string into a byte array because it provides a method to write a string directly. 
